@@ -188,7 +188,7 @@ Switch between:
 ### Additional Views
 | View 1 | View 2 |
 |--------|--------|
-| ![](Prototype-Image's/Hardware/WhatsApp Image 2026-05-27 at 19.30.40.jpeg) | ![](Prototype-Image's/Hardware/WhatsApp Image 2026-05-27 at 19.30.40 (2).jpeg) |
+| ![](Prototype-Image's/Software/Web Dashboard.jpg) | ![](Prototype-Image's/Hardware/WhatsApp Image 2026-05-27 at 19.30.40 (2).jpeg) |
 
 | View 3 | View 4 |
 |--------|--------|
