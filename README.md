@@ -4,6 +4,13 @@ A custom ESP32-powered robotic arm featuring a responsive, self-hosted web contr
 
 ---
 
+### Final Prototype
+| Side View | View |
+|------------|-----------|
+| ![](Prototype-Image's/Hardware/IMG_20260629_172201.jpg) | ![](Prototype-Image's/Hardware/IMG_20260629_173552.jpg) |
+
+---
+
 ## ✨ Features
 
 * 🌐 **Self-Hosted Web Interface** – Control the robotic arm from any smartphone, tablet, or computer connected to the ESP32 Wi-Fi network.
@@ -156,10 +163,6 @@ Switch between:
 
 ## 📸 Prototype Development Gallery
 
-### Final Prototype
-| Front View | Side View |
-|------------|-----------|
-| ![](Prototype-Image's/Hardware/IMG_20260629_172201.jpg) | ![](Prototype-Image's/Hardware/IMG_20260629_173552.jpg) |
 
 ### Working Demonstration
 | Object Picking | Object Pick-Up |
