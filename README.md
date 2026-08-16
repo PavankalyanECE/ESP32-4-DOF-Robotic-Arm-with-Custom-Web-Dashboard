@@ -159,12 +159,12 @@ Switch between:
 ### Final Prototype
 | Front View | Side View |
 |------------|-----------|
-| ![](IMG_20260629_172201.jpg) | ![](IMG_20260629_172628.jpg) |
+| ![](Prototype-Image's/Hardware/IMG_20260629_172201.jpg) | ![](IMG_20260629_172628.jpg) |
 
 ### Working Demonstration
 | Prototype | Object Pick-Up |
 |-----------|----------------|
-| ![](IMG_20260629_172436.jpg) | ![](IMG_20260629_172534.jpg) |
+| ![](Prototype-Image's/Hardware/IMG_20260629_172534.jpg) | ![](Prototype-Image's/Hardware/IMG_20260629_172628.jpg) |
 
 ### CAD Design
 ![](IMG_20260629_172912.png)
