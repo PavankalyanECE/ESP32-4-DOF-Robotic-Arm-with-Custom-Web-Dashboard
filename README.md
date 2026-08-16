@@ -162,15 +162,15 @@ Switch between:
 | ![](Prototype-Image's/Hardware/IMG_20260629_172201.jpg) | ![](Prototype-Image's/Hardware/IMG_20260629_173552.jpg) |
 
 ### Working Demonstration
-| Prototype | Object Pick-Up |
+| Object Picking | Object Pick-Up |
 |-----------|----------------|
 | ![](Prototype-Image's/Hardware/IMG_20260629_172534.jpg) | ![](Prototype-Image's/Hardware/IMG_20260629_172628.jpg) |
 
-### CAD Design
+### CAD Design (Fusion 360)
 ![](Prototype-Image's/Hardware/IMG_20260629_172912.png)
 
-### Prototype Parts
-| Components | Assembly Parts |
+### Prototype Parts (Easy to Assemble and Disassemble)
+| Assembly Parts | Assembly Parts |
 |------------|----------------|
 | ![](Prototype-Image's/Hardware/IMG_20260629_172401.jpg) | ![](Prototype-Image's/Hardware/IMG_20260629_173109.jpg) |
 
@@ -180,17 +180,19 @@ Switch between:
 ### Mechanical Drawing
 ![](Prototype-Image's/Hardware/IMG_20260629_174214.jpg)
 
-### Build Process
-| Initial Linkage | Wooden Parts |
-|-----------------|--------------|
-| ![](Prototype-Image's/Hardware/IMG_20260629_174346.jpg) | ![](Prototype-Image's/Hardware/IMG_20260629_174259.jpg) |
-
-### Additional Views
+### Web Dashboard
 | View 1 | View 2 |
 |--------|--------|
 | ![](Prototype-Image's/Software/Web-Dashboard.jpg) | ![](Prototype-Image's/Software/Web-Dashboard.jpeg) |
 
-| View 3 | View 4 |
+### Build Process
+| Planning Initial Linkage | Wooden Parts |
+|-----------------|--------------|
+| ![](Prototype-Image's/Hardware/IMG_20260629_174346.jpg) | ![](Prototype-Image's/Hardware/IMG_20260629_174259.jpg) |
+
+
+### Additional Views
+| View 1 | View 2 |
 |--------|--------|
 | ![](Prototype-Image's/Hardware/IMG_20260629_173901.jpg) | ![](Prototype-Image's/Hardware/IMG_20260629_173500.jpg) |
 
