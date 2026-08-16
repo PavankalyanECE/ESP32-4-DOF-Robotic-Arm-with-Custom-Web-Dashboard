@@ -159,7 +159,7 @@ Switch between:
 ### Final Prototype
 | Front View | Side View |
 |------------|-----------|
-| ![](Prototype-Image's/Hardware/IMG_20260629_172201.jpg) | ![](IMG_20260629_172628.jpg) |
+| ![](Prototype-Image's/Hardware/IMG_20260629_172201.jpg) | ![](Prototype-Image's/Hardware/IMG_20260629_173552.jpg) |
 
 ### Working Demonstration
 | Prototype | Object Pick-Up |
@@ -167,32 +167,32 @@ Switch between:
 | ![](Prototype-Image's/Hardware/IMG_20260629_172534.jpg) | ![](Prototype-Image's/Hardware/IMG_20260629_172628.jpg) |
 
 ### CAD Design
-![](IMG_20260629_172912.png)
+![](Prototype-Image's/Hardware/IMG_20260629_172912.png)
 
 ### Prototype Parts
 | Components | Assembly Parts |
 |------------|----------------|
-| ![](IMG_20260629_172401.jpg) | ![](IMG_20260629_174436.jpg) |
+| ![](Prototype-Image's/Hardware/.jpg) | ![](Prototype-Image's/Hardware/.jpg) |
 
 ### Gripper Mechanism
-![](IMG_20260629_173109.jpg)
+![](Prototype-Image's/Hardware/.jpg)
 
 ### Mechanical Drawing
-![](IMG_20260629_174346.jpg)
+![](Prototype-Image's/Hardware/.jpg)
 
 ### Build Process
 | Initial Linkage | Wooden Parts |
 |-----------------|--------------|
-| ![](IMG_20260629_174259.jpg) | ![](IMG_20260629_174214.jpg) |
+| ![](Prototype-Image's/Hardware/.jpg) | ![](Prototype-Image's/Hardware/.jpg) |
 
 ### Additional Views
 | View 1 | View 2 |
 |--------|--------|
-| ![](IMG_20260629_173500.jpg) | ![](IMG_20260629_173552.jpg) |
+| ![](Prototype-Image's/Hardware/.jpg) | ![](Prototype-Image's/Hardware/.jpg) |
 
 | View 3 | View 4 |
 |--------|--------|
-| ![]("C:\Users\ASUS\OneDrive\Desktop\PROJECT'S\Robotic Arm\robotic arm\IMG_20260629_174259.jpg") | ![](IMG_20260629_174025.jpg) |
+| ![](Prototype-Image's/Hardware/) | ![](Prototype-Image's/Hardware/) |
 
 ---
 
