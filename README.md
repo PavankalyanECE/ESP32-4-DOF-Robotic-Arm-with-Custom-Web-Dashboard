@@ -105,28 +105,26 @@ Although the system uses **5 servo motors**, the two SG90 servos used for the gr
 
 ## 🚀 Installation
 
-### Software Requirements
+### Required Libraries
 
-* Arduino IDE
-* ESP32 Board Package
-* Adafruit PWM Servo Driver Library
+The project uses the following libraries:
 
-### ESP32 Libraries
+| Library                     | Purpose                                                                  |
+| --------------------------- | ------------------------------------------------------------------------ |
+| `WiFi.h`                    | Creates the ESP32 Wi-Fi Access Point and handles wireless communication. |
+| `WebServer.h`               | Hosts the robotic-arm web interface on the ESP32.                        |
+| `Wire.h`                    | Provides I²C communication between the ESP32 and PCA9685.                |
+| `Adafruit_PWMServoDriver.h` | Controls the servos through the PCA9685 PWM driver.                      |
+| `EEPROM.h`                  | Stores saved arm positions in ESP32 flash memory.                        |
 
-The following libraries are provided as part of the ESP32 Arduino core:
+### Arduino IDE Setup
 
-```cpp
-#include <WiFi.h>
-#include <WebServer.h>
-#include <Wire.h>
-#include <EEPROM.h>
-```
+1. Open the project in **Arduino IDE**.
+2. Install the **ESP32 Board Package**.
+3. Install **Adafruit PWM Servo Driver Library** through the Library Manager.
+4. Select your ESP32 board and COM port.
+5. Compile and upload the code.
 
-Install the following library separately through the Arduino IDE Library Manager:
-
-* **Adafruit PWM Servo Driver Library**
-
-> The `EEPROM` library on ESP32 provides EEPROM-like storage using flash memory rather than a traditional dedicated EEPROM chip.
 
 ---
 
