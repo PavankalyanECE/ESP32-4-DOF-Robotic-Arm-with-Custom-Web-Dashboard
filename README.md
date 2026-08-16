@@ -1,43 +1,65 @@
-# 🦾 ESP32 Robotic Arm with Custom Web Dashboard
+# 🦾 ESP32 4-DOF Robotic Arm with Custom Web Dashboard
 
-A custom ESP32-powered robotic arm featuring a responsive, self-hosted web control panel. The system combines embedded C++, web technologies, and motion-smoothing algorithms to deliver smooth and precise control. Users can control the arm wirelessly, adjust movement speed, save multiple positions, and automate sequences directly from a browser.
+A custom **ESP32-powered 4-DOF robotic arm** featuring a responsive, self-hosted web control interface. The system combines embedded C++, servo control, Wi-Fi communication, and custom motion-smoothing algorithms to provide smooth and precise robotic-arm movement.
+
+The arm can be controlled wirelessly from a smartphone, tablet, or computer connected to the ESP32's Wi-Fi network. Users can control individual joints, adjust movement speed, save positions, and automate recorded motion sequences directly from a web browser.
 
 ---
 
-### Final Prototype
-| Side View | View |
-|------------|-----------|
+## 📐 Degrees of Freedom
+
+The robotic arm has **4 functional degrees of freedom (DOF)**:
+
+* Base Rotation
+* Shoulder
+* Elbow
+* Gripper
+
+Although the system uses **5 servo motors**, the two SG90 servos used for the gripper operate together as a single functional gripper DOF.
+
+---
+
+## 📸 Final Prototype
+
+| Side View                                               | Front / Main View                                       |
+| ------------------------------------------------------- | ------------------------------------------------------- |
 | ![](Prototype-Image's/Hardware/IMG_20260629_172201.jpg) | ![](Prototype-Image's/Hardware/IMG_20260629_173552.jpg) |
 
 ---
 
 ## ✨ Features
 
-* 🌐 **Self-Hosted Web Interface** – Control the robotic arm from any smartphone, tablet, or computer connected to the ESP32 Wi-Fi network.
-* 🎛️ **Real-Time Joint Control** – Smooth slider-based control for all joints and the gripper.
-* ⚡ **Motion Smoothing** – Custom acceleration and deceleration algorithms for fluid movement.
-* 💾 **Position Recording** – Save multiple arm positions directly to the ESP32's memory.
-* ▶️ **Sequence Playback** – Play, pause, stop, and loop saved motion sequences.
-* ⚙️ **Speed Adjustment** – Control the movement speed of the robotic arm from the web dashboard.
-* ✋ **Gripper Pressure Control** – Adjust the gripper opening and closing range.
-* 🏠 **Default Position Button** – Instantly return the arm to its predefined home position.
-* 🎯 **Custom Position Button** – Move the arm to a user-defined position with a single click.
-* 🌙 **Dark & Light Mode** – Switch between dark and light themes.
-* 🚨 **Emergency Stop** – Immediately stop all movements for safety.
-* 📱 **Responsive Design** – Optimized for both desktop and mobile devices.
+* 🌐 **Self-Hosted Web Interface** – Control the robotic arm from a smartphone, tablet, or computer connected to the ESP32 Wi-Fi network.
+* 🎛️ **Real-Time Joint Control** – Control the arm using slider-based controls.
+* ⚡ **Motion Smoothing** – Custom acceleration and deceleration algorithms provide smoother movement.
+* 💾 **Position Recording** – Save multiple arm positions to the ESP32's flash-backed storage.
+* ▶️ **Sequence Playback** – Play, pause, stop, and loop recorded motion sequences.
+* ⚙️ **Speed Adjustment** – Adjust the movement speed directly from the web dashboard.
+* ✋ **Gripper Control** – Control the gripper opening and closing range.
+* 🏠 **Default Position** – Return the arm to a predefined home position.
+* 🎯 **Custom Position** – Move the arm to a user-defined position.
+* 🌙 **Dark & Light Mode** – Switch between dark and light dashboard themes.
+* 🚨 **Emergency Stop** – Immediately stop active arm movements.
+* 📱 **Responsive Design** – Designed for both desktop and mobile screens.
+* 📶 **Wireless Control** – Operate the arm through the ESP32's built-in Wi-Fi access point.
 
 ---
 
 ## 🛠️ Hardware Used
 
-* ESP32 Development Board
-* PCA9685 16-Channel PWM Servo Driver
-* 2 × MG996R Servo Motors (Shoulder & Elbow)
-* 3 × SG90 Servo Motors (Base Rotation & Dual-Servo Gripper)
-* 2 × Push Buttons (Gripper Open / Close)
-* 1 × Red LED
-* 1 × Green LED
-* External 5V Power Supply
+| Component                           | Quantity | Purpose                                |
+| ----------------------------------- | -------- | -------------------------------------- |
+| ESP32 Development Board             | 1        | Main controller and Wi-Fi access point |
+| PCA9685 16-Channel PWM Servo Driver | 1        | Servo control                          |
+| MG996R Servo                        | 2        | Shoulder and Elbow                     |
+| SG90 Servo                          | 3        | Base Rotation and Dual-Servo Gripper   |
+| Push Buttons                        | 2        | Gripper Open / Close control           |
+| Red LED                             | 1        | Status indication                      |
+| Green LED                           | 1        | Status indication                      |
+| External 5V Power Supply            | 1        | Servo power                            |
+| Mechanical Frame                    | 1        | Robotic-arm structure                  |
+
+> **Note:** Use a properly rated regulated 5V supply for the servo motors. MG996R servos can draw high current under load.
 
 ---
 
@@ -53,14 +75,16 @@ A custom ESP32-powered robotic arm featuring a responsive, self-hosted web contr
 | GND     | GND                |
 | V+      | External 5V Supply |
 
-### Buttons
+> The ESP32 and the external servo power supply should share a **common ground**.
+
+### Push Buttons
 
 | Component         | ESP32 Pin |
 | ----------------- | --------- |
 | Grip Close Button | GPIO 25   |
 | Grip Open Button  | GPIO 26   |
 
-### LEDs
+### Status LEDs
 
 | Component | ESP32 Pin |
 | --------- | --------- |
@@ -69,51 +93,74 @@ A custom ESP32-powered robotic arm featuring a responsive, self-hosted web contr
 
 ### Servo Channels
 
-| PCA9685 Channel | Servo                  |
-| --------------- | ---------------------- |
-| Channel 0       | Shoulder (MG996R)      |
-| Channel 1       | Elbow (MG996R)         |
-| Channel 2       | Base Rotation (SG90)   |
-| Channel 3       | Gripper Servo 1 (SG90) |
-| Channel 4       | Gripper Servo 2 (SG90) |
+| PCA9685 Channel | Servo  | Function        |
+| --------------- | ------ | --------------- |
+| Channel 0       | MG996R | Shoulder        |
+| Channel 1       | MG996R | Elbow           |
+| Channel 2       | SG90   | Base Rotation   |
+| Channel 3       | SG90   | Gripper Servo 1 |
+| Channel 4       | SG90   | Gripper Servo 2 |
 
 ---
 
 ## 🚀 Installation
 
-### Required Libraries
+### Software Requirements
 
-Install the following libraries through the Arduino IDE Library Manager:
-
-* WiFi.h
-* WebServer.h
-* Wire.h
-* EEPROM.h
+* Arduino IDE
+* ESP32 Board Package
 * Adafruit PWM Servo Driver Library
 
-### Upload the Code
+### ESP32 Libraries
+
+The following libraries are provided as part of the ESP32 Arduino core:
+
+```cpp
+#include <WiFi.h>
+#include <WebServer.h>
+#include <Wire.h>
+#include <EEPROM.h>
+```
+
+Install the following library separately through the Arduino IDE Library Manager:
+
+* **Adafruit PWM Servo Driver Library**
+
+> The `EEPROM` library on ESP32 provides EEPROM-like storage using flash memory rather than a traditional dedicated EEPROM chip.
+
+---
+
+## 💻 Uploading the Code
 
 1. Open the project in Arduino IDE.
-2. Select your ESP32 board.
-3. Install all required libraries.
-4. Compile and upload the code to the ESP32.
+2. Install the ESP32 board package.
+3. Install the **Adafruit PWM Servo Driver Library**.
+4. Select the appropriate ESP32 board.
+5. Connect the ESP32 to your computer.
+6. Select the correct COM port.
+7. Compile the project.
+8. Upload the firmware to the ESP32.
+9. Open the Serial Monitor to verify the system status.
 
 ---
 
 ## 📶 Connecting to the Robotic Arm
 
 1. Power on the robotic arm.
-2. Connect to the ESP32 Wi-Fi network:
+2. Connect your smartphone, tablet, or computer to the ESP32 Wi-Fi network.
 
 **SSID:** `RoboticArm_AP`
 
-**Password:** `12345678`
+**Password:** `YOUR_PASSWORD`
 
-3. Open a web browser and visit:
+3. Open a web browser.
+4. Enter:
 
 `http://192.168.4.1`
 
-4. The control dashboard will open automatically.
+5. The robotic-arm control dashboard will load.
+
+> **Security:** If this project is published publicly, avoid committing a real Wi-Fi password to the repository. Store it in a configurable section of the firmware or use a placeholder.
 
 ---
 
@@ -121,7 +168,7 @@ Install the following libraries through the Arduino IDE Library Manager:
 
 ### Manual Control
 
-Use the sliders on the dashboard to control:
+Use the dashboard sliders to control:
 
 * Base Rotation
 * Shoulder
@@ -130,25 +177,29 @@ Use the sliders on the dashboard to control:
 
 ### Save Positions
 
-Click **Save Current Position** to store the current robotic arm position.
+Move the robotic arm to the desired position and click:
+
+**Save Current Position**
+
+The position is stored in the ESP32's flash-backed storage for later playback.
 
 ### Playback Controls
 
-* ▶️ Start
-* ⏸ Pause
-* ⏹ Stop
-* 🔁 Loop Sequence
+* ▶️ **Start** – Start the recorded sequence.
+* ⏸️ **Pause** – Temporarily pause playback.
+* ⏹️ **Stop** – Stop the current sequence.
+* 🔁 **Loop** – Continuously repeat the recorded sequence.
 
-### Settings Menu
+### Settings
 
-Adjust:
+The dashboard provides controls for:
 
 * Motion Speed
 * Playback Delay
 * Motion Smoothness
 * Gripper Limits
 
-### Theme Settings
+### Theme
 
 Switch between:
 
@@ -163,60 +214,91 @@ Switch between:
 
 ## 📸 Prototype Development Gallery
 
-
 ### Working Demonstration
-| Object Picking | Object Pick-Up |
-|-----------|----------------|
+
+| Object Picking                                          | Object Pick-Up                                          |
+| ------------------------------------------------------- | ------------------------------------------------------- |
 | ![](Prototype-Image's/Hardware/IMG_20260629_172534.jpg) | ![](Prototype-Image's/Hardware/IMG_20260629_172628.jpg) |
 
-### CAD Design (Fusion 360)
+---
+
+### CAD Design — Fusion 360
+
 ![](Prototype-Image's/Hardware/IMG_20260629_172912.png)
 
-### Prototype Parts (Easy to Assemble and Disassemble)
-| Assembly Parts | Assembly Parts |
-|------------|----------------|
+---
+
+### Prototype Parts
+
+The mechanical structure was designed to make the arm relatively easy to assemble and disassemble.
+
+| Assembly Parts                                          | Assembly Parts                                          |
+| ------------------------------------------------------- | ------------------------------------------------------- |
 | ![](Prototype-Image's/Hardware/IMG_20260629_172401.jpg) | ![](Prototype-Image's/Hardware/IMG_20260629_173109.jpg) |
 
-### Gripper Mechanism
-![](Prototype-Image's/Hardware/IMG_20260629_173225.jpg)
+---
 
 ### Mechanical Drawing
+
 ![](Prototype-Image's/Hardware/IMG_20260629_174214.jpg)
 
+---
+
+### Gripper Mechanism
+
+![](Prototype-Image's/Hardware/IMG_20260629_173225.jpg)
+
+---
+
 ### Web Dashboard
-| View 1 | View 2 |
-|--------|--------|
+
+| View 1                                            | View 2                                             |
+| ------------------------------------------------- | -------------------------------------------------- |
 | ![](Prototype-Image's/Software/Web-Dashboard.jpg) | ![](Prototype-Image's/Software/Web-Dashboard.jpeg) |
 
+---
+
 ### Build Process
-| Planning Initial Linkage | Wooden Parts |
-|-----------------|--------------|
+
+| Planning Initial Linkage                                | Wooden Parts                                            |
+| ------------------------------------------------------- | ------------------------------------------------------- |
 | ![](Prototype-Image's/Hardware/IMG_20260629_174346.jpg) | ![](Prototype-Image's/Hardware/IMG_20260629_174259.jpg) |
 
+---
 
 ### Additional Views
-| View 1 | View 2 |
-|--------|--------|
+
+| View 1                                                  | View 2                                                  |
+| ------------------------------------------------------- | ------------------------------------------------------- |
 | ![](Prototype-Image's/Hardware/IMG_20260629_173901.jpg) | ![](Prototype-Image's/Hardware/IMG_20260629_173500.jpg) |
 
 ---
 
 ## 🔮 Future Improvements
 
-* Object detection using OpenCV
-* Automatic pick-and-place operations
-* Mobile application control
-* Inverse kinematics implementation
-* Voice control support
+* 👁️ Object detection using OpenCV
+* 🤖 Automatic pick-and-place operations
+* 📱 Dedicated mobile application
+* 📐 Inverse kinematics implementation
+* 🎙️ Voice-controlled operation
+* 🧠 Autonomous object manipulation
+* 📡 Remote control over a wider network
+* 🎯 Object-position-based motion planning
 
 ---
 
 ## 📄 License
 
-This project is open-source and available under the MIT License.
+This project is open-source and available under the **MIT License**.
 
 ---
 
-### Designed and built by Lakshmi Pavan Kalyan Imandi
+## 👨‍💻 Author
+
+**Lakshmi Pavan Kalyan Imandi**
 
 Electronics and Communication Engineering (ECE) Student | Robotics & Embedded Systems Enthusiast
+
+---
+
+⭐ **If you find this project useful, consider giving the repository a star!**
