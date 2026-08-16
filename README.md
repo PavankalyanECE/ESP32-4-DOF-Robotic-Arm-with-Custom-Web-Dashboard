@@ -192,7 +192,7 @@ Switch between:
 
 | View 3 | View 4 |
 |--------|--------|
-| ![](IMG_20260629_173901.jpg) | ![](IMG_20260629_174025.jpg) |
+| ![]("C:\Users\ASUS\OneDrive\Desktop\PROJECT'S\Robotic Arm\robotic arm\IMG_20260629_174259.jpg") | ![](IMG_20260629_174025.jpg) |
 
 ---
 
