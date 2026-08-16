@@ -166,45 +166,17 @@ Install the following library separately through the Arduino IDE Library Manager
 
 ## 🎮 Usage
 
-### Manual Control
+| Function           | Controls / Action                                                           |
+| ------------------ | --------------------------------------------------------------------------- |
+| **Manual Control** | Use sliders to control Base, Shoulder, Elbow, and Gripper.                  |
+| **Save Position**  | Click **Save Current Position** to store the current arm position.          |
+| **Start**          | ▶️ Start the recorded motion sequence.                                      |
+| **Pause**          | ⏸️ Temporarily pause sequence playback.                                     |
+| **Stop**           | ⏹️ Stop the current sequence.                                               |
+| **Loop**           | 🔁 Continuously repeat the recorded sequence.                               |
+| **Settings**       | Adjust Motion Speed, Playback Delay, Motion Smoothness, and Gripper Limits. |
+| **Theme**          | 🌙 Dark Mode / ☀️ Light Mode                                                |
 
-Use the dashboard sliders to control:
-
-* Base Rotation
-* Shoulder
-* Elbow
-* Gripper
-
-### Save Positions
-
-Move the robotic arm to the desired position and click:
-
-**Save Current Position**
-
-The position is stored in the ESP32's flash-backed storage for later playback.
-
-### Playback Controls
-
-* ▶️ **Start** – Start the recorded sequence.
-* ⏸️ **Pause** – Temporarily pause playback.
-* ⏹️ **Stop** – Stop the current sequence.
-* 🔁 **Loop** – Continuously repeat the recorded sequence.
-
-### Settings
-
-The dashboard provides controls for:
-
-* Motion Speed
-* Playback Delay
-* Motion Smoothness
-* Gripper Limits
-
-### Theme
-
-Switch between:
-
-* 🌙 Dark Mode
-* ☀️ Light Mode
 
 ---
 
