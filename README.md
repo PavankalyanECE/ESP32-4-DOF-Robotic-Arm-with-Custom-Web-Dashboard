@@ -107,22 +107,20 @@ Although the system uses **5 servo motors**, the two SG90 servos used for the gr
 
 ### Required Libraries
 
-The project uses the following libraries:
-
-| Library                     | Purpose                                                                  |
-| --------------------------- | ------------------------------------------------------------------------ |
-| `WiFi.h`                    | Creates the ESP32 Wi-Fi Access Point and handles wireless communication. |
-| `WebServer.h`               | Hosts the robotic-arm web interface on the ESP32.                        |
-| `Wire.h`                    | Provides I²C communication between the ESP32 and PCA9685.                |
-| `Adafruit_PWMServoDriver.h` | Controls the servos through the PCA9685 PWM driver.                      |
-| `EEPROM.h`                  | Stores saved arm positions in ESP32 flash memory.                        |
+```cpp
+#include <WiFi.h>                    // ESP32 Wi-Fi Access Point
+#include <WebServer.h>               // Web control dashboard
+#include <Wire.h>                    // I2C communication
+#include <Adafruit_PWMServoDriver.h> // PCA9685 servo control
+#include <EEPROM.h>                  // Position storage
+```
 
 ### Arduino IDE Setup
 
 1. Open the project in **Arduino IDE**.
 2. Install the **ESP32 Board Package**.
-3. Install **Adafruit PWM Servo Driver Library** through the Library Manager.
-4. Select your ESP32 board and COM port.
+3. Install **Adafruit PWM Servo Driver Library** from the Library Manager.
+4. Select your **ESP32 board** and **COM port**.
 5. Compile and upload the code.
 
 
