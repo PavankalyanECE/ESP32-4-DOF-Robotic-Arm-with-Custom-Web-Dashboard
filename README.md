@@ -172,18 +172,18 @@ Switch between:
 ### Prototype Parts
 | Components | Assembly Parts |
 |------------|----------------|
-| ![](Prototype-Image's/Hardware/.jpg) | ![](Prototype-Image's/Hardware/.jpg) |
+| ![](Prototype-Image's/Hardware/IMG_20260629_172401.jpg) | ![](Prototype-Image's/Hardware/IMG_20260629_173109.jpg) |
 
 ### Gripper Mechanism
-![](Prototype-Image's/Hardware/.jpg)
+![](Prototype-Image's/Hardware/IMG_20260629_173225.jpg)
 
 ### Mechanical Drawing
-![](Prototype-Image's/Hardware/.jpg)
+![](Prototype-Image's/Hardware/IMG_20260629_174214.jpg)
 
 ### Build Process
 | Initial Linkage | Wooden Parts |
 |-----------------|--------------|
-| ![](Prototype-Image's/Hardware/.jpg) | ![](Prototype-Image's/Hardware/.jpg) |
+| ![](Prototype-Image's/Hardware/IMG_20260629_174346.jpg) | ![](Prototype-Image's/Hardware/IMG_20260629_174259.jpg) |
 
 ### Additional Views
 | View 1 | View 2 |
