@@ -200,9 +200,9 @@ Although the system uses **5 servo motors**, the two SG90 servos used for the gr
 
 The mechanical structure was designed to make the arm relatively easy to assemble and disassemble.
 
-| Assembly Parts                                          | Assembly Parts                                          |
-| ------------------------------------------------------- | ------------------------------------------------------- |
-| ![](Prototype-Image's/Hardware/IMG_20260629_172401.jpg) | ![](Prototype-Image's/Hardware/IMG_20260629_173109.jpg) |
+| Assembly Parts                                          |
+| ------------------------------------------------------- |
+| ![](Prototype-Image's/Hardware/IMG_20260629_172401.jpg) |
 
 ---
 
