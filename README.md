@@ -6,6 +6,12 @@ The arm can be controlled wirelessly from a smartphone, tablet, or computer conn
 
 ---
 
+## 🎥 Demo Video
+
+▶️ **[Watch Project Demo on YouTube]([https://youtu.be/keNhArxh3Wc?si=I9Wl2F8vSYozDkFv](https://www.linkedin.com/posts/pavan-kalyan-imandi_robotics-automation-embeddedsystems-activity-7468150726012215296-CXLO?utm_source=share&utm_medium=member_desktop&rcm=ACoAAFw0y9sB_qGbIhLnvJZX2MOsZLDNtu1Mhy0))**
+
+---
+
 ## 📐 Degrees of Freedom
 
 The robotic arm has **4 functional degrees of freedom (DOF)**:
